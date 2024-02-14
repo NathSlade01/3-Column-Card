@@ -1,0 +1,117 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+p{
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 80px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    width: 60%;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    padding: 40px;
+    border-radius: 7px 0 0 7px;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    padding: 40px;
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 40px;
+    border-radius: 0 7px 7px 0;
+}
+
+.sedans button {
+    padding: 10px 20px;
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 40px;
+    border: 1px solid hsl(0, 0%, 95%);
+}
+.suvs button {
+    padding: 10px 20px;
+    color: hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 40px;
+    border: 1px solid hsl(0, 0%, 95%);
+}
+button {
+    font-family: "Lexend Deca", sans-serif;
+    padding: 10px 20px;
+    color: hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 40px;
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+
+
+button:hover {
+    padding: 10px 20px;
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+    border-radius: 40px;
+    cursor: pointer;
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        margin: 50px 0;
+        display: flex;
+        flex-flow: column;
+        width: 80%;
+    }
+
+    .sedans {
+        background-color: hsl(31, 77%, 52%);
+        padding: 40px;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .luxury {
+        background-color: hsl(179, 100%, 13%);
+        padding: 40px;
+        border-radius: 0 0 7px 7px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .container {
+        margin: 50px 0;
+        display: flex;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .container {
+        margin: 50px 0;
+        display: flex;
+        width: 65%;
+    }
+}
